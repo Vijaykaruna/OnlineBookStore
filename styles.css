@@ -33,7 +33,7 @@ body {
   .search-section button,
   .login-section button {
     padding: 5px;
-    margin-right: 5px;
+    margin-right: 10px;
   }
   .search-section button,
   .login-section button {
@@ -41,6 +41,16 @@ body {
   }
   .login-section h2 {
     margin-bottom: 10px;
+  }
+  .login-section
+  {
+    text-align: right;
+  }
+  button
+  {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
   }
   .featured-books {
     display: flex;
@@ -96,6 +106,10 @@ body {
     text-align: center;
   }
   #contact
+  {
+    text-align: center;
+  }
+  #mylist
   {
     text-align: center;
   }

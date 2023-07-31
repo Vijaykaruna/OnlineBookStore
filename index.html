@@ -4,6 +4,7 @@
   <title>Online Books Store</title>
   <link rel="icon" type="image/x-icon" href="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjEwMzMtYi0wNS1iXzIucG5n.png">
   <link rel="stylesheet" href="styles.css">
+  <script src="mycart.js"></script>
 </head>
 
 <body>
@@ -24,16 +25,14 @@
       <input type="text" placeholder="Search for books...">
       <button>Search</button>
     </section>
+    <section class="mylist">
+      <p id="mylist"> My List: 0</p>
+    </section>
 
     <section class="login-section">
-      <h2>Login</h2>
-      <form>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Login</button>
-      </form>
+      <h2>Signin</h2>
+       <a href="signin.html"><button>Signin</button></a>
+      
     </section>
 
     <section class="featured-books">
@@ -43,7 +42,7 @@
         <h3>Tirukkural</h3>
         <p>Author: Thiruvalluvar</p>
         <p>Price: Rs.200</p>
-        <button>Add to Cart</button>
+       <button onclick="mylist(1)">Add to Cart</button>
         <p><a href="https://en.wikipedia.org/wiki/Kural">More details</a></p>
       </div>
       <div class="book2">
@@ -51,7 +50,7 @@
         <h3>Silappatikaram</h3>
         <p>Author: Ilango Adigal</p>
         <p>Price: Rs.155</p>
-        <button>Add to Cart</button>
+        <button onclick="mylist(1)">Add to Cart</button>
         <p><a href="https://en.wikipedia.org/wiki/Cilappatikaram">More details</a></p>
       </div>
     </section>
