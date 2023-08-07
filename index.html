@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Books Store</title>
+  <link rel="icon" type="image/x-icon" href="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjEwMzMtYi0wNS1iXzIucG5n.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="s1style.css">
+  <script src="mycart.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Online Books Store</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <input type="text" placeholder="Search for books...">
+      <button>Search</button>
+    </section>
+    <section class="mylist">
+      <p id="mylist"> My List: 0</p>
+    </section>
+
+    <section class="login-section">
+      <h2>Signin</h2>
+       <button id="s">Signin</button>
+       <div id="myModal" class="modal">
+          <div class="signin">
+            <span class="close">&times;</span>
+            <h2>Signin</h2> <br>
+           <form action="index.html">   
+            <input type="text" id="email" name="email" placeholder="Email"><br><br>
+            <input type="password" id="Password" name="Password" placeholder="Password"><br><br>
+            <input type="checkbox" onclick="myFunction()">Show Password<br><br>
+             <script src="ps.js"></script>
+            <input type="submit" id="submit" value="Signin"><br><br>
+           </form>  
+           <script src="signin.js"></script>  
+        </div>
+       </div>
+      
+    </section>
+
+    <section class="featured-books">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp1iZmCnFH2rHRSkOC09i3TbDaBthIuLh25g&usqp=CAU" alt="books">
+      <div class="book1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5pUC5mLYU-Fc0WFkHLxR2lhRojSeaYKiw5A&usqp=CAU" alt="Book 1">
+        <h3>Tirukkural</h3>
+        <p>Author: Thiruvalluvar</p>
+        <p>Price: Rs.200</p>
+       <button onclick="mylist(1)">Add to Cart</button>
+        <p><a href="https://en.wikipedia.org/wiki/Kural">More details</a></p>
+      </div>
+      <div class="book2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5pUC5mLYU-Fc0WFkHLxR2lhRojSeaYKiw5A&usqp=CAU" alt="Book 2">
+        <h3>Silappatikaram</h3>
+        <p>Author: Ilango Adigal</p>
+        <p>Price: Rs.155</p>
+        <button onclick="mylist(1)">Add to Cart</button>
+        <p><a href="https://en.wikipedia.org/wiki/Cilappatikaram">More details</a></p>
+      </div>
+    </section>
+
+    
+  </main>
+  <div id="about">
+    <h4>About</h4>
+    <p>A book store is a retail space offering a wide
+        selection of books, catering to various interests and
+      age groups. It can be physical or online, with knowledgeable
+    staff assisting customers in finding the right books. Bookstores
+      serve as cultural hubs, promoting literacy, and fostering a
+                   love for reading.</p>
+  </div>
+  <div id="contact">
+    <h4>Contact</h4>
+    <p><b>twitter - </b> @OnlineBookStore <b>&nbsp;E-mail - </b> bookstore@gmail.com <b></p>
+  </div>
+  <footer>
+    <p>&copy; 2023 Online Books Store. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
